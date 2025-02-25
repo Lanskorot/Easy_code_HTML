@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root * {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Coda Caption", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4.6vw 0;
+  /*border: 3px solid rgb(18, 216, 64);*/
+}
+
+/*intro*/
+.intro {
+  height: 99.8vh;
+  border: 1px solid black;
+  background-image: url(./assets/main_bg.svg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    margin-top: 2.5vw;
+    margin-bottom: 1vw;
+    width: 10vw;
+  }
+
+  .logo-title {
+    color: white;
+    font-family: "Roboto", serif;
+  }
+
+  h1,
+  .big-yellow {
+    color: #f9bf3b;
+    font-weight: 900;
+    font-size: 2vw;
+  }
+
+  .big-white {
+    color: white;
+    font-size: 3vw;
+  }
+
+  .big-white::before,
+  .big-white::after {
+    content: "";
+    display: inline-block;
+    border: 0.1vw solid white;
+    width: 15vw;
+    margin: 1vw;
+  }
+
+  .head_text {
+    color: white;
+    max-width: 900;
+    font-size: 1vw;
+  }
+
+  .yellow {
+    color: #f9bf3b;
+  }
+
+  .subscribe {
+    color: white;
+    font-family: "Coda", serif;
+    text-decoration: none;
+    background-color: #2798b9;
+    padding: 2vw;
+    display: inline-block;
+    margin-top: 2vw;
+    font-size: 1vw;
+    border-radius: 5px;
+  }
+
+  .about {
+    margin-top: 5vw;
+    color: white;
+  }
+
+  .down {
+    width: 2vw;
+  }
+}
+
+/*section expectations*/
+.expectations {
+  background-color: #efefef;
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #252525;
+  }
+  .divider{
+    width: 11.5vw;
+    height: 0.2vw;
+    background-color: #F9BF3B;
+    margin: 1vw auto;
+  }
+
+  h3{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 87%;
+    text-align: center;
+    color: #4a4a4a;
+  }
+
+  .expectations-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  figure{
+    width: 19.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }    
+
+  img{
+    width: 15vw;
+  }
+
+  figcaption{
+    font-size: 0.8vw;
+    color: #4a4a4a;
+  }
+  }
+}
+
+/*optimisation*/
+.optimisation {
+  max-width: 92vw;
+  height: 516px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optimisation-img {
+  max-width: 31.53vw;
+  margin-left: 10vw;
+  margin-right: 1vw;
+}
+
+.optimisation_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 18vw; 
+}
+
+.optimisation_h2 {
+  font-family: var(--font-family);
+  font-weight: 30vw;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #272424;
+}
