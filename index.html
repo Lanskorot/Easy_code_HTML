@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExellentTime</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg">
+</head>
+<body>
+    <section class="intro">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="/assets/intro/лого.png" alt="logo">
+                </div>
+                <div class="title">
+                    <p>Официальный представитель</p>
+                    <p class="brands">Reebok, Nike, Adidas</p>
+                </div>
+
+                <div class="contacts">
+                    <p>+7 (499) 922-89-74</p>
+                    <a href="tel:+74999228974"  target="_blank" class="call-btn">заказать звонок</a>
+                </div>
+            </header>
+            <div class="main-info">
+                 <h1>подбор кроссовок</h1>
+                 <h2>с учётом Ваших ПОТРЕБНОСТЕЙ</h2> 
+                 <div class="facilities">
+                    <figure>
+                        <img src="./assets/intro/019_timer_time_stopwatch_2-64.svg" alt="часы">
+                        <figcaption>Время подбора:<br>10 минут</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/intro/app 08 hand cart 64.svg" alt="Тележка">
+                        <figcaption>Бесплатная<br>доставка</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/intro/messages 64.svg" alt="Сообщения">
+                        <figcaption>Ответим<br>на все вопросы</figcaption>
+                    </figure>
+                 </div>  
+
+                <button onclick="consult.showModal()">заказать кОНСУЛЬТАЦИЮ</button>
+
+                <p>или <a href="">перейти в каталог</a></p>
+                
+                <dialog id="consult" >
+                    <h2 class="title-form">Просто заполните форму заявки</h2>
+                    <h3 class="subtitle">и мы перезвоним вам в течении 10 минут</h3>
+                    <form action="#">
+                        <input type="text" name="text" id="text" placeholder="Ваше имя" required autocomplete="additional-name">
+
+                        <input type="tel" name="tel" id="tel" placeholder="Ваш телефон" required autocomplete="cc-number">
+
+                        <input type="email" name="email" id="email" placeholder="Ваш E - mail" required autocomplete="email">
+
+                        <input type="submit" value="Заказать консультацию">
+
+                        <span class="close" onclick="consult.close()" title="Close window">🞭</span>
+
+
+                    </form>
+                </dialog>
+
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+          <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+          <div class="divider"></div>
+          <div class="expectations-cards">
+            <figure>
+              <img class="cup" src="./assets/intro/cup.svg" alt="cup">
+
+              <figcaption>
+                <h3>
+                    Делимся опытом
+                </h3>
+                <p>Наши сотрудники всегда готовы поделиться своим опытом, 
+                    так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
+              </figcaption>
+            </figure>
+            <figure >
+              <img class="heart" src="./assets/intro/heart.svg" alt="heart">
+              <figcaption>
+                <h3>Заботимся о здоровье</h3>
+                <p>
+                    Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+                </p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img class="shoe" src="./assets/intro/shoe.svg" alt="shoe">
+              <figcaption>
+                <h3>
+                    Учим бегать
+                </h3>
+                <p>
+                    Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="https://probeg.org/" target="_blank">I LOVE RUNNING.</a>
+                </p>
+              </figcaption>
+            </figure>
+  
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>
