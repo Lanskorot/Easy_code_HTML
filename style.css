@@ -492,18 +492,11 @@
     margin-top:  5.7vw;
     padding: 0 5vw;
 
-  h1{
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 1.6vw;
-    text-transform: uppercase;
-    text-align: center;
-    color: #0d0d0d;} 
-  }
+  
 
 
-  h2{
-    font-family: var(--font-family);
+  h2, h1{
+     font-family: var(--font-family);
     font-weight: 400;
     font-size: 1.6vw;
     text-transform: uppercase;
@@ -884,6 +877,61 @@
 
 }
 
+/*отзывы*/
+.reviews{
+
+
+
+  .reviews-wrapper{
+
+    display: grid;
+    grid-template-rows: repeat(3, minnmax(50.57vw, 1fr));
+    row-gap: 4.43vw;
+    place-items: center;
+    
+
+    .card{
+      display: grid;
+      grid-template-columns: auto auto;
+      border: none;
+    }
+
+    img{
+      max-width: 8.9vw;
+      width: 100%;
+      margin-right: 3.31vw;
+    }
+    img:hover{
+      animation: smallBigSmall 1.4s infinite;
+    }
+
+    h3{
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 0.9vw;
+      color: #0d0d0d;
+      
+
+    }
+
+    h4{
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 0.7vw;
+      color: #646464;
+      margin-bottom: 0.6vw;
+    }
+
+    p{
+      font-family: var(--font-family);
+      font-weight: 300;
+      font-size: 0.8vw;
+      color: #0d0d0d;
+      max-width: 36.56vw;
+    }
+  }
+}
+
 
 
 
@@ -934,6 +982,19 @@
   }
   100% {
     transform: translateY(0);
+  }
+
+}
+
+@keyframes smallBigSmall{
+  0%{
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  1000%{
+    transform: scale(1);
   }
 
 }
