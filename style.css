@@ -255,7 +255,7 @@
 
 .advantages {
   background-color: #F6F6F6;
-  margin-bottom: 5vw;
+  padding-bottom: 5vw;
   
   h2 {
     font-family: var(--font-family);
@@ -280,7 +280,6 @@
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 0.8vw;
-    line-height: 129%;
     text-align: center;
     color: #0d0d0d;
     max-width: 14vw;
@@ -879,7 +878,7 @@
 
 /*отзывы*/
 .reviews{
-
+  margin-bottom: 4.7vw;
 
 
   .reviews-wrapper{
@@ -930,6 +929,66 @@
       max-width: 36.56vw;
     }
   }
+}
+
+
+footer{
+  height: 40vw;
+  position: relative;
+
+  .info-cart{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24vw;
+    height: 14vw;
+    background-color: #c70101;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #fff;
+
+
+    .adress{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 1vw;
+      color: #fff;
+      text-align: center;
+    }
+
+    .tel{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 0.9vw;
+      color: #fff;
+      
+    }
+
+    .social-media{
+      img{
+        width: 2.8vw;
+        animation: smallBigSmall 3s infinite;
+      }
+
+    }
+
+
+    .closeDialog{
+      font-size: 1vw;
+      position: absolute;
+      top: 0.2vw;
+      right: 0.4vw;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+
 }
 
 
@@ -996,6 +1055,343 @@
   1000%{
     transform: scale(1);
   }
+
+}
+
+
+
+
+@media(width <= 768px){
+  * .container{
+    width: 100%;
+    text-align: center;
+    & h2{
+      font-size: 5vw !important;
+    }
+
+    & h3{
+      font-size: 2vw !important;
+    }
+
+    & .expectations-cards{
+      flex-direction: column;
+      align-items: center !important;
+    
+      figure{
+        width: 70vw !important;
+        & img{
+          width: 12vw !important;
+        }
+
+        & figcaption{
+          font-size: 4.5vw ;
+          & h3{
+            font-size: 4.5vw !important;
+            width: 70vw !important;
+          }
+          & p {
+            font-size: 4.5vw !important;
+            margin: 0 auto;
+            max-width: none ;
+          }
+
+          
+          padding-bottom:  8vw;
+        }
+      }
+    }
+
+    & form{
+      width: 50vw !important;
+      margin: 0 auto;
+      & input{
+        font-size:  3vw !important;
+      }
+      & button{
+        font-size: 3.5vw !important;
+        border-radius: 1vw !important;
+        margin-top: 2vw !important;
+        width: 40vw;
+        margin: 0 auto;
+      }
+
+
+
+
+    }
+
+
+
+
+
+
+  }
+ 
+  .intro .container{
+    backdrop-filter: blur(3px);
+
+    header{
+      display: block;
+      & img{
+        width: 100px;
+        height: 30px;
+      }
+      & p{
+        font-size: 3.5vw!important;
+      }
+
+      & a{
+        font-size: 3.5vw!important;
+        padding: 1vw !important;
+        width: 45vw;
+        margin: 0 auto;
+        border-radius: 10px !important;
+      }
+
+    }
+
+
+    .main-info{
+      display: none;
+    }
+  }
+
+  dialog#thanks{
+    width: 40vw !important;
+    border-radius: 2vw;
+    .title-form{
+      line-height: 5vw;
+    }
+
+    span.close{
+      font-size: 3vw !important;
+      top: -0.3vw !important;
+      right: 0.7vw !important;
+    }
+
+  }
+
+  .carousel_section{
+    .carousel{
+      width: 50vw !important;
+   
+    }
+  
+    .carousel img.d-block{
+      height: 35vw !important;
+  
+    }
+    .carousel-inner, .carousel-item, .carousel img.d-block {
+      height: 35vw !important; /* или любая другая фиксированная высота */
+      max-height: 35vw !important;
+    }
+  
+    .carousel-control-next-icon{
+      height: 4.6vw !important;
+      width: 3.4vw !important;
+      
+    }
+
+    .carousel-control-prev-icon{
+      height: 4.6vw !important;
+      width: 3.4vw !important;
+    }
+  }
+
+  .catalog{
+    .catalog_container{
+      .catalog-title{
+          font-size: 4vw !important;  
+      }
+      .nav-link{
+        width: 16vw;
+        
+      }
+      .nav-link span{
+        font-size: 1.4vw !important;
+      }
+
+
+
+      
+    }
+
+    .card-wrapper {
+
+      grid-template-columns: none !important;
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 1vw; 
+
+
+      .product-card{
+        width: 40vw !important;
+        height: 52vw !important;
+      }
+
+      .front-side{
+        img{
+          width: 30vw  !important;
+        }
+        h2{
+          font-size: 2vw !important;
+        }
+  
+        h3{
+          font-size: 1.8vw !important;
+          width: 20vw !important;
+        }
+  
+        span.details{
+          font-size: 2vw !important;         
+        }
+  
+        hr{
+          width: 39vw !important;  
+        }
+  
+        .wrapper{
+          width: 23.5vw  !important; 
+          .prices{         
+            .old-prce {
+              font-size: 1.7vw !important;
+            }
+  
+            .price{
+              font-size: 2vw !important;
+            }
+  
+  
+  
+          }
+  
+          input[type='submit']{
+            font-size: 1.8vw !important;
+          }
+  
+        }
+      }
+      
+    }
+
+    .back-side{
+      ul li{
+        font-size: 2vw !important;
+        margin-left: 1vw !important;
+      }
+
+      .back{
+        font-size: 2vw !important;
+      }
+
+      hr{
+        width: 39vw !important;
+      }
+
+      .wrapper{
+          width: 23.5vw  !important; 
+          .prices{         
+            .old-prce {
+              font-size: 1.7vw !important;
+            }
+  
+            .price{
+              font-size: 2vw !important;
+            }
+  
+  
+  
+          }
+  
+          input[type='submit']{
+            font-size: 1.8vw !important;
+          }
+  
+        }
+
+      }
+
+      dialog#order{
+        width: 40vw !important;
+    
+        h2.title-form{
+          font-size: 2.8vw !important;
+        }
+    
+    
+        h3.subtitle-form{
+          font-size: 2vw !important;
+        }
+        form{
+          gap: 1.5vw;
+        }
+    
+        span.close{
+          font-size: 3vw !important;
+          top: 1.5vw !important;
+          right: 1.5vw !important;
+          width: 1.5vw !important;
+          height: 1.5vw !important;
+        }
+    
+    
+        input{
+          font-size: 1.8vw !important;
+        }
+    
+        input[type="submit"]{
+          font-size: 1.8vw !important;
+        }
+    
+      }
+  }
+  
+  .reviews{
+    h2{
+      font-size: 5vw;
+    }
+    .card{
+      grid-template-columns: auto !important;
+      justify-items: center;
+      img{
+        max-width: 18vw !important;
+        margin-right: 0  !important;
+        margin-bottom: 3vw;
+      }
+      .card-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+          font-size: 2.5vw;
+        }
+        h4{
+          font-size: 2vw;
+        }
+        p{
+          font-size: 1.8vw;
+        }
+      }
+    }
+  }
+
+
+
+  footer .info-cart {
+    width: 55vw !important;
+    .social-media{
+      img{
+        width: 25px;
+        height: 25px;
+      }
+    }
+    p{
+      font-size: 2.5vw !important;
+    }
+    
+  }
+
+
+
 
 }
 
